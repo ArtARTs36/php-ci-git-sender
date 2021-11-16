@@ -4,7 +4,7 @@ This is an auxiliary PHP package for sending commits during the CI pipelines.
 
 ## Installation
 
-Run: `artarts36/ci-git-sender`
+Run: `composer require artarts36/ci-git-sender`
 
 ## Example
 
