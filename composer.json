@@ -1,0 +1,29 @@
+{
+    "name": "artarts36/ci-git-sender",
+    "description": "CI Git Sender",
+    "type": "library",
+    "require": {
+        "artarts36/git-handler": "^1.1",
+        "ondram/ci-detector": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArtARTs36\\CiGitSender\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ArtARTs36\\CiGitSender\\Tests\\": "tests"
+        }
+    },
+    "authors": [
+        {
+            "name": "ArtARTs36",
+            "email": "temicska99@mail.ru"
+        }
+    ],
+    "require-dev": {
+        "jetbrains/phpstorm-attributes": "^1.0",
+        "phpunit/phpunit": "^9.5"
+    }
+}
