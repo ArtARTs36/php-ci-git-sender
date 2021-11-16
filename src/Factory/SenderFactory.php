@@ -1,6 +1,6 @@
 <?php
 
-namespace ArtARTs36\CiGitSender\Sender\Factory;
+namespace ArtARTs36\CiGitSender\Factory;
 
 use ArtARTs36\CiGitSender\Contracts\Sender;
 use ArtARTs36\CiGitSender\Remote\Credentials;
