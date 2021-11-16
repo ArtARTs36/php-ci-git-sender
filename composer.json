@@ -24,6 +24,17 @@
     ],
     "require-dev": {
         "jetbrains/phpstorm-attributes": "^1.0",
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.5",
+        "squizlabs/php_codesniffer": "^3.6"
+    },
+    "scripts": {
+        "lint": [
+            "./vendor/bin/phpcs --standard=PSR2 src/",
+            "./vendor/bin/phpcs --standard=PSR2 tests/"
+        ],
+        "test": [
+            "echo 'Run tests'",
+            "XDEBUG_MODE=coverage ./vendor/bin/phpunit -v --coverage-text --configuration phpunit.xml --coverage-clover=tests/reports/logs/clover.xml --coverage-xml=tests/reports/logs/coverage-xml --log-junit=tests/reports/logs/junit.xml"
+        ]
     }
 }

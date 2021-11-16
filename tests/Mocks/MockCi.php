@@ -12,34 +12,33 @@ class MockCi implements CiInterface
         public string $commit = '',
         public string $branch = '',
         public bool $isPullRequest = false,
-    )
-    {
+    ) {
         //
     }
 
     public static function isDetected(Env $env): bool
     {
-        // TODO: Implement isDetected() method.
+        return true;
     }
 
     public function getCiName(): string
     {
-        // TODO: Implement getCiName() method.
+        return 'mock_ci';
     }
 
     public function describe(): array
     {
-        // TODO: Implement describe() method.
+        return get_object_vars($this);
     }
 
     public function getBuildNumber(): string
     {
-        // TODO: Implement getBuildNumber() method.
+        return '';
     }
 
     public function getBuildUrl(): string
     {
-        // TODO: Implement getBuildUrl() method.
+        return '';
     }
 
     public function getCommit(): string
@@ -54,17 +53,17 @@ class MockCi implements CiInterface
 
     public function getTargetBranch(): string
     {
-        // TODO: Implement getTargetBranch() method.
+        return '';
     }
 
     public function getRepositoryName(): string
     {
-        // TODO: Implement getRepositoryName() method.
+        return '';
     }
 
     public function getRepositoryUrl(): string
     {
-        // TODO: Implement getRepositoryUrl() method.
+        return '';
     }
 
     public function isPullRequest(): TrinaryLogic

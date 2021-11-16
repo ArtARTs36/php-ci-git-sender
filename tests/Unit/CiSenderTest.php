@@ -19,7 +19,7 @@ final class CiSenderTest extends TestCase
     {
         $sender = new CiSender($decorable = new MockSender(), MockCiDetector::not());
 
-        $sender->send('', new Message(''),'');
+        $sender->send('', new Message(''), '');
 
         self::assertFalse($decorable->isCalled());
     }
