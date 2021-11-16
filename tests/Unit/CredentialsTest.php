@@ -8,6 +8,7 @@ use ArtARTs36\CiGitSender\Tests\TestCase;
 final class CredentialsTest extends TestCase
 {
     /**
+     * @covers \ArtARTs36\CiGitSender\Remote\Credentials::__construct
      * @covers \ArtARTs36\CiGitSender\Remote\Credentials::fromArray
      */
     public function testFromArray(): void

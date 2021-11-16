@@ -13,6 +13,7 @@ use ArtARTs36\GitHandler\Data\Author;
 final class CiSenderTest extends TestCase
 {
     /**
+     * @covers \ArtARTs36\CiGitSender\Sender\CiSender::__construct
      * @covers \ArtARTs36\CiGitSender\Sender\CiSender::send
      */
     public function testSendOnCiIsNotDetected(): void
@@ -25,6 +26,7 @@ final class CiSenderTest extends TestCase
     }
 
     /**
+     * @covers \ArtARTs36\CiGitSender\Sender\CiSender::__construct
      * @covers \ArtARTs36\CiGitSender\Sender\CiSender::send
      */
     public function testSendOnPullRequest(): void
@@ -37,6 +39,7 @@ final class CiSenderTest extends TestCase
     }
 
     /**
+     * @covers \ArtARTs36\CiGitSender\Sender\CiSender::__construct
      * @covers \ArtARTs36\CiGitSender\Sender\CiSender::send
      */
     public function testSendOk(): void

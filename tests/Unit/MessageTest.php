@@ -25,6 +25,7 @@ final class MessageTest extends TestCase
 
     /**
      * @dataProvider providerForTestRender
+     * @covers \ArtARTs36\CiGitSender\Commit\Message::__construct
      * @covers \ArtARTs36\CiGitSender\Commit\Message::render
      * @covers \ArtARTs36\CiGitSender\Commit\Message::addTags
      * @covers \ArtARTs36\CiGitSender\Commit\Message::addTag
