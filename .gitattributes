@@ -4,3 +4,4 @@ README.MD           export-ignore
 tests               export-ignore
 phpunit.xml         export-ignore
 .github             export-ignore
+.php-cs-fixer.php   export-ignore

@@ -25,12 +25,11 @@
     "require-dev": {
         "jetbrains/phpstorm-attributes": "^1.0",
         "phpunit/phpunit": "^9.5",
-        "squizlabs/php_codesniffer": "^3.6"
+        "artarts36/php-cs-fixer-good-fixers": "^0.1.0"
     },
     "scripts": {
         "lint": [
-            "./vendor/bin/phpcs --standard=PSR2 src/",
-            "./vendor/bin/phpcs --standard=PSR2 tests/"
+            "php-cs-fixer fix --dry-run --verbose --diff --ansi --allow-risky=yes"
         ],
         "test": [
             "echo 'Run tests'",
