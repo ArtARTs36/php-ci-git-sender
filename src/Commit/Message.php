@@ -6,6 +6,7 @@ use ArtARTs36\Str\Facade\Str;
 
 class Message
 {
+    /** @var array<string, string> */
     protected array $tags = [];
 
     public function __construct(protected string $message)

@@ -1,5 +1,11 @@
 # Ci Git Sender
 
+![PHP Composer](https://github.com/ArtARTs36/php-ci-git-sender/workflows/PHP%20Composer/badge.svg?branch=master)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<a href="https://poser.pugx.org/artarts36/ci-git-sender/d/total.svg">
+<img src="https://poser.pugx.org/artarts36/ci-git-sender/d/total.svg" alt="Total Downloads">
+</a>
+
 This is an auxiliary PHP package for sending commits during the CI pipelines.
 
 ## Installation

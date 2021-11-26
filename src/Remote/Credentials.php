@@ -18,6 +18,9 @@ class Credentials
         //
     }
 
+    /**
+     * @param array<string, string> $array
+     */
     public static function fromArray(
         #[ArrayShape([
             'login' => 'string',

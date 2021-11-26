@@ -3,6 +3,7 @@
     "description": "CI Git Sender",
     "type": "library",
     "require": {
+        "php": "^8",
         "artarts36/git-handler": "^1.1",
         "ondram/ci-detector": "^4.1"
     },
@@ -32,8 +33,7 @@
             "php-cs-fixer fix --dry-run --verbose --diff --ansi --allow-risky=yes"
         ],
         "test": [
-            "echo 'Run tests'",
-            "XDEBUG_MODE=coverage ./vendor/bin/phpunit -v --coverage-text --configuration phpunit.xml --coverage-clover=tests/reports/logs/clover.xml --coverage-xml=tests/reports/logs/coverage-xml --log-junit=tests/reports/logs/junit.xml"
+            "XDEBUG_MODE=coverage ./vendor/bin/phpunit -v --coverage-text --configuration phpunit.xml"
         ]
     }
 }
